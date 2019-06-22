@@ -8,11 +8,13 @@ public class Hashmatique {
 	* Iterate over a HashMap.  */
 	
 	
-	// make the Hashmap available to all the methods below 
-	public HashMap<String, String> album;
+	
+	// private to make the Hashmap available ONLY to all the methods below 
+	// static to make the Hashmap function a class method or constant that doens't require an object reference
+	private static HashMap<String, String> album;
 		
 	
-	/* Method 1:  Create a Album of type HashMap  */
+	/* Method 1:  Create a HashMap collection - Album/Tracklist  */
 	public void createAlbum(){
 		album = new HashMap<String, String>();
 		System.out.println("New album created, please add a new track!");
